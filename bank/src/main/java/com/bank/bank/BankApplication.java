@@ -21,14 +21,21 @@ public class BankApplication {
         payments.add(debitCard);
 
         cod.processPayment();
-        transfer.processPayment();
-        creditCard.processPayment();
-        debitCard.processPayment();
-
         cod.generateReceipt();
+
+        transfer.processPayment();
         transfer.generateReceipt();
+
+        creditCard.processPayment();
         creditCard.generateReceipt();
+
+        debitCard.processPayment();
         debitCard.generateReceipt();
+
+
+
+
+
 	}
 
 }
